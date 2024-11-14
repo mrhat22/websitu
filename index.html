@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KiwiRead</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>KiwiRead</h1>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container_botao">
+            <label for="menu">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="a" class="lista-menu__link">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="a" class="lista-menu__link">Front-end</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="a" class="lista-menu__link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="a" class="lista-menu__link">Business</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="a" class="lista-menu__link">Design & UX</a>
+                </li>
+            </ul>
+            <img src="img/logo.svg" alt="kiwi bem esperto sabe contar 1+1" class="container__imagem">
+        </div>
+        <div class="container"></div>
+        <span class="cabeçalho__menu-hamburguer"></span>
+        <img src="img/logo.svg" alt="logo do KiwiRead">
+        <a href="#"><img src="img/Favoritos.svg" alt="Meus Favoritos" class="container__imagem"></a>
+        <a href="#"><img src="img/Compras.svg" alt="carrinho de Compras" class="container__imagem"></a>
+        <a href="#"><img src="img/Usuario.svg" alt="Meu Usuario" class="container__imagem"></a>
+    </header>
+    <section class="banner">
+        <h2 class="banner_titulo">vamos a lir</h2>
+        <p class="banner_texto">a estante é alta, mas é porque tem muitos livros</p>
+        <input type="search" class="banner_pesquisa" placeholder="qual será sua proxima leitura">
+    </section>
+    <section class="carrosel">
+        <h2 class="carrosel__titulo">the new favorite</h2>
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <div class="card">
+        <div class="card__descrição">
+            <div class="descrição">
+                <h3 class="descrição__titulo">voce taambem vai gostar disso!</h3>
+                <h2 class="descrição__titulo-livro">look at the sky wwWOOOOOOO</h2>
+                <p class="descrição__texto">;P</p>
+            </div>
+            <img src="img/" alt="descrição-imagem">
+        </div>
+    </div>
+
+    <div class="card__botões">
+        <ul class="botões">
+            <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+            <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar ao carrinho"></li>
+        </ul>
+        <a href="#" class="botões__ancora">receber mais conhecimento</a>
+    </div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+    </div>
+    </section>
+
+    <section class="tópicos">
+        <h2 class="tópicos__titulo">wannametchintesama... casdewi can tell...</h2>
+        <ul class="tópicos__lista">
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Android</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Marketing Digital</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Desentupir Privadas</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Tatuar o Tatu</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Minheeen</a>
+            </li>
+        </ul>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: 'swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+</body>
+
+</html>
